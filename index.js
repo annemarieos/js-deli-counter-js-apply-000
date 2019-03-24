@@ -17,4 +17,3 @@ function currentLine (updateLine) {
   } else {
     return "The line is currently empty."
   }
-    
