@@ -11,15 +11,15 @@ function nowServing(katzDeliLine) {
   }
 }
 
-function currentLine(line){
-  if(!line.length) {
+function currentLine(updatedLine){
+  if(katzDeliLine === 0) {
     return "The line is currently empty.";
   }
-  var lineNamesandNumbers = [];
+  var line = [];
 
-  for(var i=0; i<line.length; i++) {
-    lineNamesandNumbers.push(i+1 + ". "+ line[i]);
+  for(var i=0; i<updatedLine.length; i++) {
+    updatedLine.push(i+1 + ". "+ updatedLine[i]);
   }
-  console.log("The line is currently: " + lineNamesandNumbers)
-  return "The line is currently: " + lineNamesandNumbers.join(', ');
+  console.log("The line is currently: " + line)
+  return "The line is currently: " + line.join(', ');
 }
